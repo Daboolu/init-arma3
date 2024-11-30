@@ -1,6 +1,6 @@
 ## 效果
 
-<video src="README.assets/video.mp4"></video>
+![video](https://github.com/Daboolu/init-arma3/blob/main/video.gif)
 
 ## 启动游戏
 
