@@ -31,23 +31,23 @@ sqf语言文档：[Scripting Commands – Arma 3 Category - Bohemia Interactive 
 
 ## 进入游戏
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_23_30](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_23_30.png)
+![image-20241130145743956](README.assets/image-20241130145743956.png)
 
 > 点击editor
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_23_46](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_23_46.png)
+![image-20241130145759137](README.assets/image-20241130145759137.png)
 
 > 使用地图
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_24_11](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_24_11.png)
+![image-20241130145809660](README.assets/image-20241130145809660.png)
 
 > 这里是打开，你需要自己创建，创建教程在后面。
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_24_48](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_24_48.png)
+![image-20241130145824365](README.assets/image-20241130145824365.png)
 
 > 左边是我们定义的无人机，以及飞行的轨迹。
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_25_33](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_25_33.png)
+![image-20241130145838153](README.assets/image-20241130145838153.png)
 
 > 上图是六架无人机的航拍图
 
@@ -55,17 +55,17 @@ sqf语言文档：[Scripting Commands – Arma 3 Category - Bohemia Interactive 
 
 ## 创建过程
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_31_38](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_31_38.png)
+![image-20241130145853025](README.assets/image-20241130145853025.png)
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_32_53](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_32_53.png)
+![image-20241130145903128](README.assets/image-20241130145903128.png)
 
 > 保存并命名
 
 - 下面一添加一个无人机为例
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_39_00](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_39_00.png)
+![image-20241130145914062](README.assets/image-20241130145914062.png)
 
-![Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_39_40](README.assets/Arma 3 _D__SteamLibrary_steamapps_common_Arma 3_Arma3_x64.exe_ _-mod=D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@CBA_A3;D__SteamLibrary_steamapps_common_Arma 3_!Workshop_@Pythia_ 2024_11_30 14_39_40.png)
+![image-20241130145925186](README.assets/image-20241130145925186.png)
 
 通过拖拽完成上述操作。当然也可以在sqf语言里去编写你自己的规则。
 
@@ -74,8 +74,4 @@ sqf语言文档：[Scripting Commands – Arma 3 Category - Bohemia Interactive 
 > init.sqf
 
 当你点击`玩游戏场景`,就会执行的文件。
-
-在网盘下载code：
-
-https://drive.google.com/file/d/1u-YessynVPDVaoB6sYyKKiPgFZO8MDM0/view?usp=drive_link
 
