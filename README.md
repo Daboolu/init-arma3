@@ -1,3 +1,8 @@
+## 效果
+
+<video src="README.assets/video.mp4"></video>
+
+
 ## 启动游戏
 
 修改模块，初启动是没有HITSZ那个模块的。
