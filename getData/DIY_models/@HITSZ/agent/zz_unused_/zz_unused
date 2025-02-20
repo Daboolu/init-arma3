@@ -1,0 +1,97 @@
+    _window_x = safeZoneX + safeZoneW / 128;
+    _window_y = safeZoneY + (safeZoneH / 4) + safeZoneH*0.01 + safeZoneH / 128;
+    _window_w = safeZoneW / 8;
+    _window_h = safeZoneH / 4;
+    _window_text_h = _window_h / 7;
+    _ctrl_status_window = findDisplay 46 ctrlCreate ["RscPicture", -1]; 
+    _ctrl_status_window ctrlSetPosition [_window_x, _window_y, _window_w, _window_h];
+    _ctrl_status_window ctrlSetText "#(argb,8,8,1)color(0,0,0,0.5)"; 
+    _ctrl_status_window ctrlCommit 0;
+
+    _ctrl_status_x = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_y = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_atl = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_asl = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_yaw = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_pitch = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_row = findDisplay 46 ctrlCreate ["RscText", -1]; 
+    _ctrl_status_x ctrlSetPosition [_window_x, _window_y];
+    _ctrl_status_y ctrlSetPosition [_window_x, _window_y + _window_text_h];
+    _ctrl_status_atl ctrlSetPosition [_window_x, _window_y + _window_text_h * 2];
+    _ctrl_status_asl ctrlSetPosition [_window_x, _window_y + _window_text_h * 3];
+    _ctrl_status_yaw ctrlSetPosition [_window_x, _window_y + _window_text_h * 4];
+    _ctrl_status_pitch ctrlSetPosition [_window_x, _window_y + _window_text_h * 5];
+    _ctrl_status_row ctrlSetPosition [_window_x, _window_y + _window_text_h* 6];
+    _ctrl_status_x ctrlSetText "_ctrl_status_x";
+    _ctrl_status_y ctrlSetText "_ctrl_status_y";
+    _ctrl_status_atl ctrlSetText "_ctrl_status_atl";
+    _ctrl_status_asl ctrlSetText "_ctrl_status_asl";
+    _ctrl_status_yaw ctrlSetText "_ctrl_status_yaw";
+    _ctrl_status_pitch ctrlSetText "_ctrl_status_pitch";
+    _ctrl_status_row ctrlSetText "_ctrl_status_row";
+    _ctrl_status_x ctrlCommit 0;
+    _ctrl_status_y ctrlCommit 0;
+    _ctrl_status_atl ctrlCommit 0;
+    _ctrl_status_asl ctrlCommit 0;
+    _ctrl_status_yaw ctrlCommit 0;
+    _ctrl_status_pitch ctrlCommit 0;
+    _ctrl_status_row ctrlCommit 0;
+
+
+    uav flyInHeight 2; 
+    _grp = group uav; 
+    _wp = _grp addWaypoint [[0,0], -1]; 
+    getPosATL uav;
+
+uav engineOn true; 
+uav flyInHeight 1;  
+uav doMove [1930,5830]; 
+getPosATL uav;
+
+pos = getPosATL uav;
+uav engineOn true;  
+uav flyInHeight 1;  
+uav doMove [pos select 0, pos select 1]; 
+uav setDestination [[1930,5830], "LEADER PLANNED", true];
+
+_agent = uav;    
+_goalPos = [0, 0, 1];  
+_agent limitSpeed 1; 
+_agent flyInHeight (_goalPos select 2);
+_agent doMove _goalPos;
+getPosATL _agent;
+
+
+["VR",[0,0,16.9],360,0.75,[-89.9,0],0,0,720,0,0,1,0,1]
+_agent = uav;     
+_agent limitSpeed 1;   
+_grp = group _agent;   
+_wpPos = [0, 8, 1];     
+_wp = _grp addWaypoint [_wpPos, -1];   
+_wp setWaypointCompletionRadius 2;  
+_wp setWaypointType "MOVE";  
+_agent flyInHeight (_wpPos select 2);  
+getPosATL _agent;
+
+_agent = uav;       
+_agent limitSpeed 1;     
+_grp = group _agent;     
+_wpPos = getPosATL _agent; 
+x = _wpPos select 0; 
+y = _wpPos select 1; 
+_wp = _grp addWaypoint [[x + 0.1, y + 0.6], -1];           
+_agent flyInHeight 1;    
+getPosATL _agent;
+
+_agent = uav;     
+_agent limitSpeed 1;   
+_grp = group _agent;   
+_wpPos = [2947.469, 6034.134, 1.5];     
+_wp = _grp addWaypoint [_wpPos, -1];   
+_wp setWaypointCompletionRadius 1;  
+_wp setWaypointType "MOVE";  
+_agent flyInHeight (_wpPos select 2);  
+getPosATL _agent;
+
+
+[2947.469, 6034.134, 1.5]
